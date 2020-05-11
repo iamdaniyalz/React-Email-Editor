@@ -2,7 +2,7 @@
 
 const textA = "div.blockbuilder-content-tool:nth-child(6)"
 const body = "li.nav-item:nth-child(3)"
-const bgColor = "div[class='sc-uJMKN eWrJFr']:nth-child(2)"
+const bgColor = "div[class='sc-uJMKN eWrJFr']:nth-child(2) div"
 
 class Tools {
 

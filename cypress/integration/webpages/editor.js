@@ -83,10 +83,10 @@ describe('Change Colour', () => {
   })
 
   it('Change color', () => {
-      // select the new color value in the <input type="color">
+                                                                                                                                                                 // select the new color value in the <input type="color">
       // element and trigger "change" event
       getIframeBody().find(tools.bgColor())
-          .invoke('val', '#000000')
+          .invoke('val', '#ff0000')
           .trigger('change')
   })
 })
