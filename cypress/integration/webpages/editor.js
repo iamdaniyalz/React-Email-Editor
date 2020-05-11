@@ -82,11 +82,16 @@ describe('Change Colour', () => {
     getIframeBody().find(tools.body()).click()
   })
 
-  it('Change color', () => {
-                                                                                                                                                                 // select the new color value in the <input type="color">
-      // element and trigger "change" event
-      getIframeBody().find(tools.bgColor())
-          .invoke('val', '#ff0000')
-          .trigger('change')
+  it('Change color', () => {                                                                                                                                                 // select the new color value in the <input type="color">
+    getIframeBody().find(tools.bgColor())
+        .invoke('val', '#ff0000')
+        .trigger('change')
   })
+})
+
+describe('Export HTML', () => {
+  it('Click on export HTML', () => {
+    cy.get(tools.export()).click()
+  })
+
 })
